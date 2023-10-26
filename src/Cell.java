@@ -17,6 +17,15 @@ public class Cell {
     }
 
     public void statusChange(int neighbours){
+        if (type == 1){
+            if(neighbours < 2 || neighbours > 4) type = 0;
 
+
+
+        }
+
+        if (type == 0){
+            if (neighbours == 3) type = 1;
+        }
     }
 }
